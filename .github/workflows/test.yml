@@ -20,5 +20,8 @@ jobs:
             echo ${{ needs.call-embedded.outputs.test1 && 'is truthy' }}
             echo ${{ needs.call-embedded.outputs.test1 == true && 'is truthy' }}
             echo ${{ needs.call-embedded.outputs.test1 == 'true' && 'is truthy' }}
+            echo ${{ needs.call-embedded.outputs.test2 && 'is truthy' }}
+            echo ${{ needs.call-embedded.outputs.test2 == true && 'is truthy' }}
+            echo ${{ needs.call-embedded.outputs.test2 == 'true' && 'is truthy' }}
 
 
