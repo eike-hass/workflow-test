@@ -24,14 +24,14 @@ jobs:
         run: |
           TEST1=
           echo TEST1=$TEST1
-          echo "::set-output name=test1::=$TEST1"
+          echo "::set-output name=test1::$TEST1"
           TEST2=true
           echo TEST2=$TEST2
-          echo "::set-output name=test2::=$TEST2"
+          echo "::set-output name=test2::$TEST2"
           TEST3=false
           echo TEST3=$TEST3
-          echo "::set-output name=test3::=$TEST3"
+          echo "::set-output name=test3::$TEST3"
           TEST4=0
           echo TEST4=$TEST4
-          echo "::set-output name=test4::=$TEST4"
+          echo "::set-output name=test4::$TEST4"
          
