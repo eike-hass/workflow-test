@@ -14,13 +14,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     outputs:
-      test1: ${{ steps.determine-version.outputs.test1 }}
-      test2: ${{ steps.determine-version.outputs.test2 }}
-      test3: ${{ steps.determine-version.outputs.test3 }}
-      test4: ${{ steps.determine-version.outputs.test4 }}
+      test1: ${{ steps.setup.outputs.test1 }}
+      test2: ${{ steps.setup.outputs.test2 }}
+      test3: ${{ steps.setup.outputs.test3 }}
+      test4: ${{ steps.setup.outputs.test4 }}
     steps:
-      - name: Determine Release Version
-        id: determine-version
+      - name: Setup
+        id: setup
         run: |
           TEST1=
           echo TEST1=$TEST1

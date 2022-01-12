@@ -8,6 +8,7 @@ jobs:
     # owner/repository of workflow has to be static, see https://github.community/t/env-variables-in-uses/17466
     uses: eike-hass/workflow-test/.github/workflows/embedded.yml@master
   result:
+    needs: call-embedded
     runs-on: ubuntu-latest
     steps:
       - name: test
